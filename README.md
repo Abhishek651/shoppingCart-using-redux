@@ -1,5 +1,7 @@
 # 🛒 Shopping Cart — Redux Learning Project
 
+🔗 [Live Demo](https://shopping-cart-using-redux-khaki.vercel.app/)
+
 A mini shopping cart application built with React and Redux Toolkit to understand state management through hands-on development.
 
 ## Features
