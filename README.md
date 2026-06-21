@@ -1,16 +1,58 @@
-# React + Vite
+# 🛒 Shopping Cart — Redux Learning Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A mini shopping cart application built with React and Redux Toolkit to understand state management through hands-on development.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* Browse a list of products
+* Add products to the shopping cart
+* Increase or decrease item quantities
+* Apply coupon codes for discounts
+* Automatic calculation of subtotal, discount, and final total
+* Real-time cart item count displayed in the navbar
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React 19
+* Redux Toolkit
+* React Redux
+* Tailwind CSS
+* Shadcn UI
+* Vite
 
-## Expanding the ESLint configuration
+## What I Learned
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* Setting up and configuring Redux Toolkit in a React application
+* Creating and organizing Redux slices for feature-based state management
+* Managing global state instead of relying on prop drilling
+* Using `useSelector` to access store data across components
+* Using `useDispatch` to trigger state updates through actions
+* Handling complex cart operations such as adding, removing, and updating quantities
+* Calculating derived values like cart totals and discounts from store data
+* Managing application state in a predictable and scalable way
+* Structuring Redux files for maintainability and future feature expansion
+* Debugging Redux state changes and understanding application data flow
+
+## Project Structure
+
+```text
+src/
+  myComponent/
+    navbar.jsx       # Navigation bar with cart badge
+    products.jsx     # Product listing
+    cart.jsx         # Cart dialog and order summary
+    cartItem.jsx     # Individual cart item
+    quantity.jsx     # Quantity controls
+
+  redux/
+    store.js
+    slices/
+      productSlice.js
+```
+
+## Getting Started
+
+```bash
+npm install
+npm run dev
+```
